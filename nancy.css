@@ -1,0 +1,183 @@
+ 
+  .gift-page {
+    padding: 20px;
+  }
+  
+  #gifts img {
+    width: 150px;
+    margin: 10px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Festive Fonts and Colors */
+body {
+    font-family: 'Playfair Display', serif, Arial, sans-serif;  /* You can use Google Fonts like 'Great Vibes' */
+
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #0d3b66;
+    color: #fff;
+    background-image: url('images/snowy-background.jpg'); /* Add a snowy background image here */
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+/* Snowfall Effect */
+@keyframes snow {
+    0% { transform: translateY(-10px); opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0.5; }
+  }
+  
+  .snowflake {
+    position: absolute;
+    top: -10px;
+    font-size: 24px; /* Increased size */
+    color: white;
+    opacity: 0.8;
+    animation: snow 10s linear infinite;
+  }
+  
+  .snowflake:nth-child(1) { left: 5%; animation-duration: 8s; }
+  .snowflake:nth-child(2) { left: 15%; animation-duration: 10s; animation-delay: 2s; }
+  .snowflake:nth-child(3) { left: 25%; animation-duration: 12s; animation-delay: 4s; }
+  .snowflake:nth-child(4) { left: 35%; animation-duration: 9s; animation-delay: 1s; }
+  .snowflake:nth-child(5) { left: 45%; animation-duration: 11s; animation-delay: 3s; }
+  .snowflake:nth-child(6) { left: 55%; animation-duration: 10s; animation-delay: 5s; }
+  .snowflake:nth-child(7) { left: 65%; animation-duration: 8s; animation-delay: 7s; }
+  .snowflake:nth-child(8) { left: 75%; animation-duration: 13s; animation-delay: 6s; }
+  .snowflake:nth-child(9) { left: 85%; animation-duration: 9s; animation-delay: 2s; }
+  .snowflake:nth-child(10) { left: 95%; animation-duration: 10s; animation-delay: 8s; }
+  
+  
+  /* Homepage Festivity */
+  .homepage {
+    padding: 20px;
+
+    border-radius: 10px;
+    margin: 50px auto;
+    display: inline-block;
+  }
+  
+  h1 {
+    font-family: 'Playfair Display', serif, Arial, sans-serif;  /* You can use Google Fonts like 'Great Vibes' */
+    color: #15bd06;
+    font-size: 48px;
+    text-shadow: 2px 2px 5px #000;
+  }
+  
+  p {
+    color: #ffffff;
+    font-size: 30px;
+  }
+  
+  /* Cards - Christmas Style */
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    width: 200px;
+    cursor: pointer;
+
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+
+  }
+  
+  .card p {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  /* Snowfall Effect (Reuse from Homepage) */
+@keyframes snow {
+    0% { transform: translateY(-10px); opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0.5; }
+  }
+  
+  .snowflake {
+    position: absolute;
+    top: -10px;
+    font-size: 24px; /* Same size as homepage */
+    color: white;
+    opacity: 0.8;
+    animation: snow 10s linear infinite;
+  }
+  
+  .snowflake:nth-child(1) { left: 5%; animation-duration: 8s; }
+  .snowflake:nth-child(2) { left: 15%; animation-duration: 10s; animation-delay: 2s; }
+  .snowflake:nth-child(3) { left: 25%; animation-duration: 12s; animation-delay: 4s; }
+  .snowflake:nth-child(4) { left: 35%; animation-duration: 9s; animation-delay: 1s; }
+  .snowflake:nth-child(5) { left: 45%; animation-duration: 11s; animation-delay: 3s; }
+  .snowflake:nth-child(6) { left: 55%; animation-duration: 10s; animation-delay: 5s; }
+  .snowflake:nth-child(7) { left: 65%; animation-duration: 8s; animation-delay: 7s; }
+  .snowflake:nth-child(8) { left: 75%; animation-duration: 13s; animation-delay: 6s; }
+  .snowflake:nth-child(9) { left: 85%; animation-duration: 9s; animation-delay: 2s; }
+  .snowflake:nth-child(10) { left: 95%; animation-duration: 10s; animation-delay: 8s; }
+  
+  /* Continuous Gift Carousel */
+ /* Carousel Container */
+/* Continuous Gift Carousel */
+.carousel {
+    position: relative;
+    width: 100%; /* Full width of the page */
+    overflow: hidden;
+
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 10px 0;
+  }
+  
+  .carousel-track {
+    display: flex;
+    animation: scroll 80s linear infinite; /* Slower animation (40 seconds) */
+    width: calc(400px * 12); /* Adjust to accommodate all images */
+  }
+  
+  .carousel img {
+    width: 400px; /* Standardized size */
+    height: 300px;
+    margin: 0 10px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Keyframes for Scrolling Animation */
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); } /* Move the width of the carousel */
+  }
+  
+  
+  
